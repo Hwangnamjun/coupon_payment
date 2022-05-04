@@ -53,7 +53,7 @@ $(document).ready(function() {
     $("#team_select").change(function() {
         var value = $('#team_select').val();
         $("#class_name tr").filter(function() {
-            $(this).toggle($(this).children('td:nth-child(5)').text().toLowerCase().indexOf(value) > -1)
+            $(this).toggle($(this).children('td:nth-child(7)').text().toLowerCase().indexOf(value) > -1)
         });
     });
 });
