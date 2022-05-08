@@ -21,9 +21,9 @@ public class DBConnection {
 		Connection conn = null;
 		try 
 		{
-			String user = "ddris";
-			String password = "ddris";
-			String url = "jdbc:oracle:thin:@10.10.10.11:1521:DDSDB";
+			String user = "ADMIN";
+			String password = "mihwum-gojby3-hetgYf";
+			String url = "jdbc:oracle:thin:@hwangnamjun_medium?TNS_ADMIN=/Users/hwangnamjun/Oracle_backup/Wallet_Hwangnamjun/";
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			conn = DriverManager.getConnection(url, user, password);
 			
@@ -34,7 +34,7 @@ public class DBConnection {
 		}catch(Exception e) {
 			System.out.println("에러" + e.toString());
 		}
-		
+
 		return conn;
 	}
 	public static void close(Connection con) {
